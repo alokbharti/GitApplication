@@ -4,7 +4,7 @@ This app will show a list of all github users with their scores. Default list is
 This app uses:-
   1. RecylerView for list
   2. CardView for better layout
-  3. Volley library
+  3. Volley library for HTTP request
   4. Github Api
 
 
