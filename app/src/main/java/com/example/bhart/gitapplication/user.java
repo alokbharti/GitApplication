@@ -5,4 +5,20 @@ package com.example.bhart.gitapplication;
  */
 
 public class user {
+    public String name;
+    public String score;
+
+    public user(String name, String score) {
+        this.name=name;
+        this.score=score;
+    }
+
+    public String getName() {
+
+        return name;
+    }
+
+    public String getScore() {
+        return score;
+    }
 }
