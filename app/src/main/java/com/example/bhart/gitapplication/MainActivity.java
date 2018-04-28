@@ -92,17 +92,24 @@ public class MainActivity extends AppCompatActivity {
                 userSearch = (EditText)findViewById(R.id.editext);
                 name = userSearch.getText().toString();
 
-                //updating value of url with searched name
-                url = "https://api.github.com/search/users?q="+name;
+                if(!name.isEmpty()){
+                    //updating value of url with searched name
+                    url = "https://api.github.com/search/users?q="+name;
 
-                //clearing previous list
-                listItem.clear();
-                getUserData(url);
+                    //clearing previous list
+                    listItem.clear();
+                    getUserData(url);
 
-                //notifying dataset has changed
-                mAdapter.notifyDataSetChanged();
-                Toast.makeText(getApplicationContext(),"Showing result with name "+name , Toast.LENGTH_LONG).show();
-            }
+                    //notifying dataset has changed
+                    mAdapter.notifyDataSetChanged();
+                    Toast.makeText(getApplicationContext(),"Showing result with name "+name , Toast.LENGTH_LONG).show();
+
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Please search any Name",Toast.LENGTH_LONG).show();
+                }
+
+               }
         });
 
 
