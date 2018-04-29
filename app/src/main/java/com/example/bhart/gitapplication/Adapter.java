@@ -20,7 +20,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     List<user> ListItem;
     private Context context;
-
+    
+    //constructor for Adapter class
     public Adapter(List<user> listItem, Context context) {
         ListItem = listItem;
         this.context = context;
@@ -37,19 +38,24 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         user listItem = ListItem.get(position);
+        //for showing Username
         holder.mUser.setText(listItem.getName());
+        //for showing Score of users
         holder.mScore.setText(listItem.getScore());
 
     }
-
+    
+    
     @Override
     public int getItemCount() {
         return ListItem.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+        
         public TextView mUser;
         public TextView mScore;
+        
         public ViewHolder(View itemView) {
             super(itemView);
             mUser = (TextView)itemView.findViewById(R.id.username);
