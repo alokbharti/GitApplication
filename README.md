@@ -7,7 +7,7 @@ This app uses:-
   3. Volley library for HTTP request and storing cache
   4. Github Api
 
-![Watch the demonstration of the app](https://drive.google.com/open?id=1iO3I1j9MiI2bgGyVznLZdiEKNU5GhYCA)
+[Watch the demonstration of the app](https://drive.google.com/open?id=1iO3I1j9MiI2bgGyVznLZdiEKNU5GhYCA)
 
 
 P.s.:- Check your internet while using this app.
