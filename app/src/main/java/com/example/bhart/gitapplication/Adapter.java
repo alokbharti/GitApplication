@@ -32,6 +32,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         View v = LayoutInflater.from(context).inflate(R.layout.user_list,parent,false);
         return new ViewHolder(v);
 
+        
     }
 
     @Override
